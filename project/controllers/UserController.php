@@ -17,9 +17,10 @@
         }
 
 
-        public function all()
+        public function first($param)
             {
-                for ($i = 1; $i <= 5; $i++){
+                $t = $param['n'];
+                for ($i = 1; $i <= $t; $i++){
                     $p = $this->users[$i];
                     foreach($p as $row){
                         echo $row . "\r\n";
