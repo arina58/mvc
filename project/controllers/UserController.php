@@ -17,12 +17,10 @@
         }
 
 
-        public function show($params)
+        public function info($params)
             {
                 $p =  $this->users[ $params['id'] ];
-                foreach($p as $row){
-                    echo $row . "\r\n";
-                }
+                echo $p[$params['key']];
             }
         }
 ?>
