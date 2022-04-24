@@ -17,10 +17,15 @@
         }
 
 
-        public function info($params)
+        public function all()
             {
-                $p =  $this->users[ $params['id'] ];
-                echo $p[$params['key']];
+                for ($i = 1; $i <= 5; $i++){
+                    $p = $this->users[$i];
+                    foreach($p as $row){
+                        echo $row . "\r\n";
+                    }
+                    echo '<br>';
+                }
             }
         }
 ?>

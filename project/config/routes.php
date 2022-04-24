@@ -4,6 +4,6 @@
 	return [
 		new Route('/page/:id/', 'page', 'show'),
 		new Route('/test/:n1/:n2/:n3/', 'test', 'act'),
-		new Route('/user/:id/:key/', 'user', 'info'),
+		new Route('/user/:all/', 'user', 'all'),
 	];
 	
