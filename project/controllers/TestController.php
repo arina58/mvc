@@ -4,19 +4,10 @@
 	
 	class TestController extends Controller
 	{
-		public function act1()
+        public function act($params)
 		{
-			echo '1';
-		}
-		
-		public function act2()
-		{
-			echo '2';
-		}
-
-        public function act3()
-		{
-			echo '3';
+            $s = $params['n1'] * $params['n2'] * $params['n3'];
+            echo $s;
 		}
 	}
 ?>

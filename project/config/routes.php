@@ -8,5 +8,6 @@
 		new Route('/my-test1', 'test', 'act1'),
 		new Route('/my-test2', 'test', 'act2'),
 		new Route('/my-test3', 'test', 'act3'),
+		new Route('/test/:n1/:n2/:n3/', 'test', 'act'),
 	];
 	
