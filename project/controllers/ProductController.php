@@ -43,7 +43,7 @@
 		}
         public function show($params)
 		{   
-            var_dump($this->products[$params['n']]);
+            return $this->render('product/show', $this->products[$params['n']]);
 		}
     }
 ?> 
