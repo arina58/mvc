@@ -25,7 +25,7 @@
                     foreach($p as $row){
                         echo $row . "\r\n";
                     }
-                    echo '<br>';
+                    echo '<br>'; 
                 }
             }
         }

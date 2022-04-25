@@ -1,22 +1,12 @@
 <?php
 	namespace Project\Controllers;
-	use Core\Controller;
+	use \Core\Controller;
 	
-	class PageController extends Controller
+	class PageController extends Controller 
 	{
-		
-		public function __construct()
+        public function act()
 		{
-			$this->pages = [
-				1 => 'страница 1',
-				2 => 'страница 2',
-				3 => 'страница 3',
-			];
+			return $this->render('page/act');
 		}
-		
-		public function show($params)
-		{
-			echo $this->pages[ $params['id'] ]; // выводим страницу по номеру
-		}
-	}
+    }
 ?>
